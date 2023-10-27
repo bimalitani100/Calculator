@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,#0a0a0a,#3a4452);
+    flex-direction: column;
+}
+
+.container{
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba( 113, 115, 119, 0.5);
+    display: flex;
+    flex-direction: column;
+}
+input{
+    width: 320px;
+    border: none;
+    padding: 24px;
+    margin: 10px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(84 ,84 ,84 ,0.5 );
+    cursor: pointer;
+    color: #ffffff;
+}
+input::placeholder{
+color: #ffffff;
+}
+button{
+    border: none;
+    height: 3.75rem;
+    width: 3.75rem;
+    margin: 9px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+    cursor: pointer;
+    box-shadow: -8px -8px 15px rgba(225,225,225,0.1);
+}
+button:hover{
+    color: antiquewhite;
+}
+.operator:hover{
+    color: white;
+}
+.operator{
+    color: #6dee0a;
+
+}
+.equalBtn{
+    background-color: #fb7c14;
+}
+.equalBtn:hover{
+    background-color:  orange;
+}
+@media screen and (max-width: 400px) {
+    .container {
+        max-width: 90%;
+        max-height: 90%;
+
+    }
+    
+    button {
+        width: 15%; /* Adjust button width for smaller screens */
+        font-size: 0.90rem; /* Adjust font size for smaller screens */
+    }
+
+    .equalBtn {
+    font-size: 0.90rem;
+    }
+    .operator{
+    font-size: 0.90rem;
+    }
+    input{
+    width: 100%;
+    font-size:0.90rem ;
+    }
+}
+@media screen and(max-width:285px){
+    .container{
+        max-width:90%;
+        max-height: 50%;
+    }
+    button{
+        width: 10%;
+        font-size: 0.80rem;
+    }
+    input{
+        width: 100%;
+    }
+}
